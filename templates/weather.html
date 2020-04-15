@@ -1,0 +1,28 @@
+{{define "weather"}}
+<body>
+<table cellspacing ="0">
+    <tr>
+        <th>Место:</th><th>{{.Name}}</th>
+    </tr>
+    <tr>
+        <th>Описание:</th><th>{{.MyDisc}}</th>
+    </tr>
+    <tr>
+        <th>Температура:</th><th>{{.Main.Temp}} °С</th>
+    </tr>
+    <tr>
+        <th>Ощущается как:</th><th>{{.Main.Feel}} °С</th>
+    </tr>
+    <tr>
+        <th>Давление:</th><th>{{.Main.Press}} мм рт. ст.</th>
+    </tr>
+    <tr>
+        <th>Влажность:</th><th>{{.Main.Hum}}%</th>
+    </tr>
+    <tr>
+        <th>Скорость ветра</th><th>{{.Wind.Speed}} м/с</th>
+    </tr>
+</table>
+<p><a href="http://localhost:3030/">Назад</a></p>
+</body>
+{{end}}
